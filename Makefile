@@ -1,5 +1,5 @@
 PATH := $(shell pwd)/bin:$(PATH)
-$(shell cp -n dev.env .env)
+$(shell cp --update=none dev.env .env)
 include .env
 
 install: build
