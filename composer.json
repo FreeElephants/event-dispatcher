@@ -1,29 +1,34 @@
 {
-    "name": "free-elephants/event-dispatcher",
-    "description": "PSR-14 implementation",
-    "license": "BSD-2-Clause",
-    "authors": [
-      {
-        "email": "admin@samizdam.net",
-        "name": "samizdam"
-      }
-    ],
-    "require-dev": {
-      "psr/event-dispatcher": "*",
-      "phpunit/phpunit": "^12.1"
-
-    },
-    "provide": {
-      "psr/event-dispatcher": "*"
-    },
-    "autoload": {
-    	"psr-4": {
-            "FreeElephants\\EventDispatcher\\": "src/FreeElephants/EventDispatcher/"
-    	}
-    },
-    "autoload-dev": {
-    	"psr-4": {
-            "Free-Elephants\\EventDispatcher\\": "tests/FreeElephants/EventDispatcher/"
-    	}
+  "name": "free-elephants/event-dispatcher",
+  "description": "PSR-14 implementation",
+  "license": "BSD-2-Clause",
+  "authors": [
+    {
+      "email": "admin@samizdam.net",
+      "name": "samizdam"
     }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "^10|^12.1",
+    "free-elephants/di": "^4.1"
+  },
+  "provide": {
+    "psr/event-dispatcher": "*"
+  },
+  "suggest": {
+    "free-elephants/di": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "FreeElephants\\EventDispatcher\\": "src/FreeElephants/EventDispatcher/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Free-Elephants\\EventDispatcher\\": "tests/FreeElephants/EventDispatcher/"
+    }
+  },
+  "require": {
+    "psr/event-dispatcher": "*"
+  }
 }
