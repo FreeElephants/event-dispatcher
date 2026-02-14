@@ -1,19 +1,29 @@
 {
-    "name": "samizdam/skeleton",
-    "description": "",
+    "name": "free-elephants/event-dispatcher",
+    "description": "PSR-14 implementation",
     "license": "BSD-2-Clause",
-    "authors": [],
+    "authors": [
+      {
+        "email": "admin@samizdam.net",
+        "name": "samizdam"
+      }
+    ],
     "require-dev": {
-        "phpunit/phpunit": "^12.1"
+      "psr/event-dispatcher": "*",
+      "phpunit/phpunit": "^12.1"
+
+    },
+    "provide": {
+      "psr/event-dispatcher": "*"
     },
     "autoload": {
     	"psr-4": {
-            "Samizam\\Skeleton\\": "src/Samizdam/Skeleton"
+            "FreeElephants\\EventDispatcher\\": "src/FreeElephants/EventDispatcher/"
     	}
     },
     "autoload-dev": {
     	"psr-4": {
-            "Samizdam\\Skeleton\\": "tests/Samizdam/Skeleton"
+            "Free-Elephants\\EventDispatcher\\": "tests/FreeElephants/EventDispatcher/"
     	}
     }
 }
