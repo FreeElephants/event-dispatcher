@@ -3,7 +3,6 @@ declare(strict_types=1);
 
 namespace FreeElephants\EventDispatcher;
 
-
 use Psr\EventDispatcher\EventDispatcherInterface;
 use Psr\EventDispatcher\ListenerProviderInterface;
 use Psr\EventDispatcher\StoppableEventInterface;
@@ -21,7 +20,8 @@ class EventDispatcher implements EventDispatcherInterface
 
     public function dispatch(object $event)
     {
-        foreach ($this->listenerProvider->getListenersForEvent($event) as $listener) {
+        $listenersForEvent = $this->listenerProvider->getListenersForEvent($event);
+        foreach ($listenersForEvent as $listener) {
             $listener($event);
             if ($event instanceof StoppableEventInterface && $event->isPropagationStopped()) {
                 break;

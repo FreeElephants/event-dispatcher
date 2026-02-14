@@ -25,7 +25,7 @@
   },
   "autoload-dev": {
     "psr-4": {
-      "Free-Elephants\\EventDispatcher\\": "tests/FreeElephants/EventDispatcher/"
+      "FreeElephants\\EventDispatcher\\": "tests/FreeElephants/EventDispatcher/"
     }
   },
   "require": {

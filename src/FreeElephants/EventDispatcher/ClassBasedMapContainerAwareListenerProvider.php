@@ -23,7 +23,7 @@ class ClassBasedMapContainerAwareListenerProvider implements ListenerProviderInt
 
     public function getListenersForEvent(object $event): iterable
     {
-        $listeners = $this->eventsMap[get_class($event)] ?? [];
+        $listeners = (array) $this->eventsMap[get_class($event)] ?? [];
         return array_map(fn(string $listener) => $this->container->get($listener), $listeners);
     }
 }
