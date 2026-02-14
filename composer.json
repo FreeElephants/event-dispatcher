@@ -13,7 +13,7 @@
     "free-elephants/di": "^4.1"
   },
   "provide": {
-    "psr/event-dispatcher": "*"
+    "psr/event-dispatcher-implementation": "*"
   },
   "suggest": {
     "free-elephants/di": "*"
