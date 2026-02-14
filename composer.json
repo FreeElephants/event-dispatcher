@@ -29,6 +29,6 @@
     }
   },
   "require": {
-    "psr/event-dispatcher": "*"
+    "psr/event-dispatcher": "^0.7|^1.0"
   }
 }

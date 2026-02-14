@@ -5,7 +5,6 @@ namespace FreeElephants\EventDispatcher;
 
 use FreeElephants\DI\Injector;
 use PHPUnit\Framework\TestCase;
-use Psr\Container\ContainerInterface;
 
 class ClassBasedMapContainerAwareListenerProviderTest extends TestCase
 {
