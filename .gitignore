@@ -13,4 +13,5 @@ phpunit.xml
 tests/_coverage
 
 # composer
+composer.lock
 vendor/
